@@ -124,7 +124,7 @@ class SecurityHeaderTest extends TestCase
     {
         $resp = $this->get('/');
         $scriptHeader = $this->getCspHeader($resp, 'frame-src');
-        $this->assertEquals('frame-src \'self\' https://*.draw.io https://*.youtube.com https://*.youtube-nocookie.com https://*.vimeo.com', $scriptHeader);
+        $this->assertEquals('frame-src \'self\' https://*.draw.io https://*.youtube.com https://*.youtube-nocookie.com https://*.vimeo.com https://docs.google.com', $scriptHeader);
     }
 
     public function test_frame_src_csp_header_has_drawio_host_added()

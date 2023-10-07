@@ -64,7 +64,7 @@ return [
     // Can be set to a lone "*" to allow all sources for iframe content (Not advised).
     // Defaults to a set of common services.
     // Current host and source for the "DRAWIO" setting will be auto-appended to the sources configured.
-    'iframe_sources' => env('ALLOWED_IFRAME_SOURCES', 'https://*.draw.io https://*.youtube.com https://*.youtube-nocookie.com https://*.vimeo.com'),
+    'iframe_sources' => env('ALLOWED_IFRAME_SOURCES', 'https://*.draw.io https://*.youtube.com https://*.youtube-nocookie.com https://*.vimeo.com https://docs.google.com'),
 
     // Alter the precision of IP addresses stored by BookStack.
     // Integer value between 0 (IP hidden) to 4 (Full IP usage)
